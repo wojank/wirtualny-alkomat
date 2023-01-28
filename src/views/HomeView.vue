@@ -1,7 +1,7 @@
 <template>
   <MainKalkulator :steps="steps">
     <template #step-1>
-      <TheStep1 />
+      <TheStep1 @action="handleAction" />
     </template>
     <template #step-2>
       <TheStep2 />
@@ -24,4 +24,7 @@ const steps = ref([
   { step_no: 1, step_valid: false },
   { step_no: 1, step_valid: false },
 ]);
+const handleAction = (x) => {
+  console.log("Hej", x);
+};
 </script>
