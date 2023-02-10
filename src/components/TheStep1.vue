@@ -22,13 +22,20 @@
             value="kobieta"
             name="gender"
             v-model="genderData"
+            @change="handleChange"
           />
           <label for="kobieta">kobieta</label>
         </div>
       </fieldset>
       <div class="weight-control">
         <label for="waga">Waga</label>
-        <input type="number" id="waga" name="waga" v-model="weight" />
+        <input
+          type="number"
+          id="waga"
+          name="waga"
+          v-model="weight"
+          @input="handleChange"
+        />
       </div>
     </form>
     <p>{{ genderData }}</p>
@@ -41,7 +48,7 @@ let genderData = ref("");
 let weight = ref(69);
 const emit = defineEmits(["action"]);
 const handleChange = () => {
-  emit("action", weight.value);
+  emit("action", weight.value, genderData.value);
 };
 </script>
 <style src="" lang="scss" scoped></style>
