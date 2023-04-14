@@ -87,7 +87,7 @@
           >
         </li>
         <li class="header__navigation-element">
-          <a class="header__navigation-link" href=""
+          <a class="header__navigation-link" href="/"
             ><span class="header__navigation-link-element">Kalkulator</span></a
           >
         </li>
@@ -107,7 +107,7 @@
           >
         </li>
         <li class="header__navigation-element">
-          <a class="header__navigation-link" href=""
+          <a class="header__navigation-link" href="/ciekawostki"
             ><span class="header__navigation-link-element">Ciekawostki</span></a
           >
         </li>

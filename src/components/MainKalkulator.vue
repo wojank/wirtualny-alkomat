@@ -1,18 +1,23 @@
 <template>
-  <form>
+  <div class="step-container">
     <div
       v-for="(step, index) in props.steps"
       :key="index"
       :id="'step-' + (index + 1)"
       v-show="activeStepIndex === index"
+      class="step-container__form"
     >
       <slot :name="'step-' + (index + 1)" />
     </div>
-  </form>
-  <button :disabled="activeStepIndex === 0" @click="previousStepIndex">
-    Previous
-  </button>
-  <button :disabled="activeStepIndex === 2" @click="nextStepIndex">Next</button>
+    <div class="buttons">
+      <button :disabled="activeStepIndex === 0" @click="previousStepIndex">
+        Previous
+      </button>
+      <button :disabled="activeStepIndex === 2" @click="nextStepIndex">
+        Next
+      </button>
+    </div>
+  </div>
 </template>
 <script setup>
 import { ref, defineProps } from "vue";
@@ -37,4 +42,8 @@ const previousStepIndex = () => {
 };
 /* stan Komponentów */
 </script>
-<style src="" lang="scss" scoped></style>
+<style
+  src="../styles/components/_main-kalkulator.scss"
+  lang="scss"
+  scoped
+></style>

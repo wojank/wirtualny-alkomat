@@ -1,54 +1,61 @@
 <template>
-  <div class="form-controll">
-    <p>step 1</p>
-    <form action="">
-      <fieldset id="gender">
-        <legend>Płeć</legend>
-        <div class="gender-control">
-          <input
-            type="radio"
-            id="mężczyzna"
-            value="mężczyzna"
-            name="gender"
-            v-model="genderData"
-            @change="handleChange"
-          />
-          <label for="mężczyzna">mężczyzna</label>
+  <div class="form">
+    <div class="form__wrapper">
+      <p class="form__title">podaj płeć oraz wagę</p>
+      <form>
+        <div class="form-control form-control--gender">
+          <span class="form-control__title">Płeć</span>
+          <div class="wrapper">
+            <input
+              class="form-control__input-radio"
+              id="mężczyzna"
+              type="radio"
+              value="mężczyzna"
+              name="gender"
+              v-model="genderData"
+              @change="handleChange"
+            />
+            <label class="form-control__option" for="mężczyzna"
+              >mężczyzna</label
+            >
+          </div>
+          <div class="wrapper">
+            <input
+              class="form-control__input-radio"
+              id="kobieta"
+              type="radio"
+              value="kobieta"
+              name="gender"
+              v-model="genderData"
+              @change="handleChange"
+            />
+            <label class="form-control__option" for="kobieta">kobieta</label>
+          </div>
         </div>
-        <div class="gender-control">
+        <div class="form-control form-control--weight">
+          <label class="form-control__title" for="waga">Waga</label>
           <input
-            type="radio"
-            id="kobieta"
-            value="kobieta"
-            name="gender"
-            v-model="genderData"
-            @change="handleChange"
+            class="form-control__input-number"
+            id="waga"
+            type="number"
+            name="waga"
+            v-model="weight"
+            @input="handleChange"
           />
-          <label for="kobieta">kobieta</label>
         </div>
-      </fieldset>
-      <div class="weight-control">
-        <label for="waga">Waga</label>
-        <input
-          type="number"
-          id="waga"
-          name="waga"
-          v-model="weight"
-          @input="handleChange"
-        />
-      </div>
-    </form>
-    <p>{{ genderData }}</p>
-    <p>{{ weight }}</p>
+      </form>
+    </div>
   </div>
 </template>
 <script setup>
 import { ref, defineEmits } from "vue";
+
 let genderData = ref("");
 let weight = ref(69);
+
 const emit = defineEmits(["action"]);
 const handleChange = () => {
   emit("action", weight.value, genderData.value);
 };
 </script>
-<style src="" lang="scss" scoped></style>
+<style src="../styles/components/_the-step1.scss" lang="scss" scoped></style>

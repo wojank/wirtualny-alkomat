@@ -1,0 +1,12 @@
+.form {
+  background: linear-gradient(135deg, #91c1ee, #f08181);
+  max-width: 650px;
+  height: 400px;
+  margin: 0 auto;
+  font-family: sans-serif;
+
+  &__wrapper {
+    // width: 70%;
+    margin: 0 auto;
+  }
+}
