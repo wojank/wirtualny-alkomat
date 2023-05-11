@@ -19,9 +19,4 @@ module.exports = [
     answer:
       "Nie. Kobiety w ciąży albo starające się o dziecko powinny bezwzględnie zrezygnować z picia alkoholu. Alkohol wypity przez ciężarną dostaje się do wszystkich jej organów i tkanek. Gdy dotrze do łożyska, przenika przez barierę łożyskową, więc dziecko pije razem z matką.",
   },
-  {
-    question: "Czy alkohol wpływa na kobiety inaczej niż na mężczyzn?",
-    answer:
-      "Tak. Ta sama ilość wypitego alkoholu w większości przypadków wywoła niższe stężenie we krwi w przypadku mężczyzny niż u kobiety. Powody tego są bardzo prozaiczne: mężczyźni ważą średnio więcej, mają również względnie wyższą ilość płynów w ciele. Kobiety metabolizują alkohol wolniej, więc pozostaje on dłużej w ich organizmach.",
-  },
 ];

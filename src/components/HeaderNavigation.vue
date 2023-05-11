@@ -82,33 +82,19 @@
     <nav role="navigation" class="header__navigation">
       <ul class="header__navigation-list">
         <li class="header__navigation-element">
-          <a class="header__navigation-link" href=""
-            ><span class="header__navigation-link-element">Element</span></a
-          >
-        </li>
-        <li class="header__navigation-element">
-          <a class="header__navigation-link" href="/"
-            ><span class="header__navigation-link-element">Kalkulator</span></a
-          >
-        </li>
-        <li class="header__navigation-element">
-          <a class="header__navigation-link" href=""
+          <a class="header__navigation-link" href="/about"
             ><span class="header__navigation-link-element">O projekcie</span></a
           >
         </li>
         <li class="header__navigation-element">
-          <a class="header__navigation-link" href=""
-            ><span class="header__navigation-link-element">Kampania</span></a
+          <a class="header__navigation-link" href="/kalkulator"
+            ><span class="header__navigation-link-element">Kalkulator</span></a
           >
         </li>
-        <li class="header__navigation-element">
-          <a class="header__navigation-link" href=""
-            ><span class="header__navigation-link-element">Kontakt</span></a
-          >
-        </li>
+
         <li class="header__navigation-element">
           <a class="header__navigation-link" href="/ciekawostki"
-            ><span class="header__navigation-link-element">Ciekawostki</span></a
+            ><span class="header__navigation-link-element">Faq</span></a
           >
         </li>
       </ul>

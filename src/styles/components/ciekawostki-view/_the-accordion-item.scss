@@ -5,51 +5,70 @@
     border: 1px solid white;
     border-radius: 5px;
     transition: all 0.9s ease;
-    // min-height: 100px;
-    // max-height: 100px;
     width: 100%;
     max-height: 71px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     &--question {
       cursor: pointer;
     }
+
+    &--answer {
+      margin: 0 0 16px 0;
+    }
   }
 
-  &__el-item--text {
-    width: 80%;
-  }
-
-  &__el-item__icon {
-    display: block;
+  &__el-plus {
     position: relative;
-    border: 2px solid white;
-    width: 32px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
+    // transition: all 0.3s ease;
   }
 
-  &__el-item__icon::before {
+  &__el-plus::before,
+  &__el-plus::after {
     content: "";
-    display: block;
     position: absolute;
-    border: 2px solid white;
-    width: 32px;
-    transform: rotate(90deg) translateY(2px) translateX(-2px);
-    top: 0;
-    left: 0;
-    /* https://stackoverflow.com/questions/41051094/making-a-plus-sign-with-css */
+    background-color: white;
   }
+
+  &__el-plus::before {
+    left: 50%;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+  }
+
+  &__el-plus::after {
+    top: 50%;
+    left: 4px;
+    right: 4px;
+    height: 2px;
+    opacity: 1;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+
+  &__el-plus.rotate::before {
+    transform: rotate(90deg);
+  }
+  &__el-plus.rotate::after {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.flexb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .active {
   max-height: 340px;
-}
-
-.helper {
-  background-color: yellow;
-  height: 5px;
+  // max-height: 1000px;
 }
 
 .v-enter-to,
