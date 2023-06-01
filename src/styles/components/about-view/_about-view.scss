@@ -1,0 +1,83 @@
+.container {
+  max-width: 1150px;
+  // margin: 51px auto 0 auto;
+  margin: 0 auto;
+  min-height: 500px;
+  // background-color: rgb(246, 225, 92);
+}
+
+.grid {
+  // background-color: rgb(238, 248, 248);
+  // background-color: rgb(146, 146, 241);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  // justify-content: center;
+  // align-content: center;
+
+  //jak tworzyć rozmiary komórek w gridzie?
+  // justify-content: center;
+  // flex-direction: column;
+  // align-items: center;
+
+  /*blblbl*/
+
+  &__picture {
+    grid-area: 1 / 1 / 6 / 3;
+    // background-color: rgb(249, 155, 170);
+    // background-image: url("../../../assets/landscape-before.jpg");
+  }
+
+  &__picture-heading {
+    // font-family: sans-serif;
+    font-size: 7rem;
+    margin: 20px 0 0 0;
+    line-height: 0.75;
+  }
+
+  &__picture-heading-part {
+    margin-left: 170px;
+  }
+
+  &__head {
+    // background-color: rgb(136, 255, 136);
+    grid-area: 1 / 3 / 2 / 5;
+    // position: relative;
+  }
+
+  &__head-heading {
+    font-family: sans-serif;
+    // margin: 0 0 20px 0;
+    // position: absolute;
+    // bottom: 0;
+    // font-size: 2.8rem;
+    margin: 140px 0 0 0;
+    // text-align: center;
+    font-size: 2.8rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+
+  &__column {
+    // background-color: rgb(255, 116, 255);
+    grid-area: 2 / 3 / 5 / 5;
+    &--left {
+      // grid-area: 2 / 3 / 5 / 4;
+      // background-color: rgb(116, 248, 248);
+    }
+
+    &--right {
+      // grid-area: 2 / 4 / 5 / 5;
+      // background-color: rgb(109, 109, 245);
+    }
+  }
+
+  &__column-paragraph {
+    // font-family: sans-serif;
+    margin: 40px 0 0 0;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    // text-align: justify;
+  }
+}

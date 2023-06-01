@@ -1,119 +1,123 @@
-
 :root {
   --top-color: rgb(249, 244, 244);
   --bottom-color: rgb(245, 206, 213);
   --element-color: rgb(141, 213, 213);
-  --switch-color : rgb(255, 255, 255);
+  --switch-color: rgb(255, 255, 255);
 }
 
 .darkmode {
   --top-color: rgb(154, 154, 154);
   --bottom-color: rgb(247, 242, 243);
   --element-color: rgb(208, 249, 249);
-  --switch-color : rgb(61, 61, 61);
+  --switch-color: rgb(61, 61, 61);
 }
 
-
-
 .header {
-  background-color: var(--bottom-color);
+  // background-color: var(--bottom-color);
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  // &__top-header {
+  // background-color: var(--top-color);
+  // max-width: 1150px;
+  // height: 75px;
+  // margin: 0 auto;
+  // position: relative;
+  //}
 
-  &__top-header {
-    background-color: var(--top-color);
-    max-width: 1150px;
-    height: 75px;
-    margin: 0 auto;
-    position: relative;
-  }
+  // &__social-icons {
+  //   list-style-type: none;
+  //   display: flex;
+  //   position: absolute;
+  //   top: 0px;
+  //   right: 20px;
+  // }
 
-  &__social-icons {
-    list-style-type: none;
-    display: flex;
-    position: absolute;
-    top: 0px;
-    right: 20px;
-  }
+  // &__icon-element {
+  //   background-color: var(--element-color);
+  //   //32 1.5
+  //   display: flex;
+  //   width: 35px;
+  //   height: 35px;
+  //   border-radius: 50%;
+  //   margin-left: 10px;
 
-  &__icon-element {
-    background-color: var(--element-color);
-    //32 1.5
-    display: flex;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin-left: 10px;
+  //   svg {
+  //     margin: auto;
+  //   }
+  // }
 
-    svg {
-      margin: auto;
-    }
+  &__logo {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
 
   &__navigation {
-    background-color: rgb(113, 113, 181);
+    // background-color: rgb(113, 113, 181);
     max-width: 1150px;
     height: 50px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    // border-bottom: 1px solid black;
   }
 
   &__navigation-list {
     list-style: none;
     margin: 0;
+    padding-inline-start: 0;
     //byc moze flex nie dziala z tym align bo nie ma rozmiaru listy, jest tylko rozmiar kontenera
   }
-  
+
   &__navigation-element {
     display: inline-block;
     padding: 10px;
-
   }
 
-  &__navigation-link {
-    text-decoration: none;
-  }
-  
   &__navigation-link-element {
     position: relative;
     display: block;
     font-family: sans-serif;
     text-transform: uppercase;
-    color: white;
-    padding:10px;
-    transition: .1s ease-in;
+    color: black;
+    padding: 10px;
+    transition: 0.1s ease-in;
+    text-decoration: none;
   }
 
   &__navigation-link-element:hover {
     // color: rgb(206, 217, 141);
     transform: translateY(-5px);
-    z-index: 1;
+    // z-index: 1;
   }
 
-  &__navigation-link-element::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -11px;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background-color: rgb(218, 179, 108);
-    border-top: 10px solid rgb(170, 60, 170);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    opacity: 0;
-    z-index: -1;
-    transition: .3s ease-out;
-  }
+  // &__navigation-link-element::before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: -11px;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 60px;
+  //   background-color: rgb(218, 179, 108);
+  //   border-top: 10px solid rgb(170, 60, 170);
+  //   border-top-left-radius: 10px;
+  //   border-top-right-radius: 10px;
+  //   opacity: 0;
+  //   z-index: -1;
+  //   transition: 0.3s ease-out;
+  // }
 
-  &__navigation-link-element:hover::before {
-    background-color: rgb(170, 60, 170);
-    border-top: 10px solid rgb(170, 60, 170);
-    opacity: 1;
-    //ten border na dole ktory pojawia sie innym efektem to bedzie ::after chyba
-  }
+  // &__navigation-link-element:hover::before {
+  //   background-color: rgb(170, 60, 170);
+  //   border-top: 10px solid rgb(170, 60, 170);
+  //   opacity: 1;
+  //   //ten border na dole ktory pojawia sie innym efektem to bedzie ::after chyba
+  // }
 }
 
 .switch {
@@ -147,7 +151,7 @@
   height: 28px;
   border-radius: 50%;
   background-color: var(--switch-color);
-  transition: .4s;
+  transition: 0.4s;
 }
 
 // .slider.active:before {
@@ -166,5 +170,5 @@
   transform: translateX(28px);
 }
 
-//muszę spróbowqać jak jest zrobić input checked auomatycznie 
+//muszę spróbowqać jak jest zrobić input checked auomatycznie
 //v bind if darkActive - value- checked cos takiegho

@@ -1,21 +1,24 @@
 <template>
-  <MainKalkulator :steps="steps">
-    <template #step-1>
-      <TheStep1 @action="handleAction1" />
-    </template>
-    <template #step-2>
-      <TheStep2 @action2="handleAction2" />
-    </template>
-    <template #step-3>
-      <TheStep3
-        :promile-result="promileResult"
-        :gramy-result="gramyResult"
-        :standard-result="standardResult"
-        :sober-time-result="soberTimeResult"
-      />
-    </template>
-  </MainKalkulator>
-  <button @click="alcoholCounter">Hej to ja</button>
+  <div class="step-container">
+    <MainKalkulator :steps="steps">
+      <template #step-1>
+        <TheStep1 @action="handleAction1" />
+      </template>
+      <template #step-2>
+        <TheStep2 @action2="handleAction2" />
+      </template>
+      <template #step-3>
+        <TheStep3
+          :promile-result="promileResult"
+          :gramy-result="gramyResult"
+          :standard-result="standardResult"
+          :sober-time-result="soberTimeResult"
+        />
+      </template>
+    </MainKalkulator>
+    <button @click="alcoholCounter">Hej to ja</button>
+  </div>
+  <!-- ten button raczej będzie musiał być w ManKalkulator tak żeby każdy przycisk był na tym samym poziomie -->
 </template>
 
 <script setup>
@@ -84,3 +87,4 @@ const alcoholCounter = () => {
 //wyniki też być może rozszerzyć tak jak są w pijodpowiedzialnie.pl czyli alko w g i w ml i promilach i szacunkowy czas trzezwienia i porcje standardowe
 //routing - nazwy np pijodpowiedzialnie.pl/kalkulator/
 </script>
+<style src="../styles/components/calc-view/_calc-view.scss" lang="scss"></style>

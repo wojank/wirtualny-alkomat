@@ -1,7 +1,25 @@
 <template>
   <footer class="footer">
-    <div class="footer__bottom-footer">
-      <p>&copy; 2022 by Wojciech Ankiel</p>
+    <p class="footer__paragraph">Znajdź nas</p>
+    <div class="footer__socials">
+      <a href="https://www.instagram.com/">
+        <font-awesome-icon
+          class="footer__social"
+          icon="fa-brands fa-twitter"
+          size="2x"
+        />
+      </a>
+
+      <font-awesome-icon
+        class="footer__social"
+        icon="fa-brands fa-instagram"
+        size="2x"
+      />
+      <font-awesome-icon
+        class="footer__social"
+        icon="fa-brands fa-facebook-f"
+        size="2x"
+      />
     </div>
   </footer>
 </template>

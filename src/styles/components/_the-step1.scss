@@ -1,26 +1,46 @@
 .form {
   // background-color: rgb(219, 154, 154);
-  background: linear-gradient(135deg, #91c1ee, #f08181);
-  max-width: 650px;
-  height: 400px;
-  margin: 0 auto;
-  font-family: sans-serif;
+  // background: linear-gradient(135deg, #91c1ee, #f08181);
+  // max-width: 650px;
+  // height: 400px;
+  // margin: 0 auto;
+  // font-family: sans-serif;
 
   &__wrapper {
-    width: 70%;
-    margin: 0 auto;
+    // width: 70%;
+    // margin: 0 auto;
     // background-color: var(--primary);
   }
 
   &__title {
     text-align: center;
     margin: 0 0 1rem 0;
-    color: white;
+    color: black;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
     letter-spacing: 1.5px;
   }
+}
+
+.title {
+  grid-area: 1 / 5 / 2 / 9;
+}
+
+.men {
+  grid-area: 2 / 4 / 3 / 7;
+}
+
+.women {
+  grid-area: 2 / 7 / 3 / 10;
+}
+
+.weight {
+  grid-area: 3 / 5 / 4 / 9;
+}
+
+.age {
+  grid-area: 4 / 5 / 5 / 9;
 }
 
 .form-control {
@@ -34,7 +54,7 @@
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.7px;
-    color: white;
+    color: black;
   }
 
   &__input-radio {
@@ -47,24 +67,26 @@
 
   &__option {
     display: block;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
+    // text-align: left;
+    // width: 100%;
+    // padding: 10px;
+    // border-radius: 5px;
     // background-color: var(--dark3);
     // color: var(--light);
     // border: 2px inset var(--dark4);
-    border: 1px solid white;
-    color: white;
+    // border: 1px solid white;
+    color: black;
     font-family: "Roboto", sans-serif;
-    margin: 0 0 1rem 0;
+    // margin: 0 0 1rem 0;
     cursor: pointer;
     text-align: center;
     position: relative;
+    // background-color: pink;
   }
 
-  &__option:hover {
-    border: 1px solid var(--secondary);
-  }
+  // &__option:hover {
+  //   border: 1px solid var(--secondary);
+  // }
 
   &__option::before {
     content: "";
@@ -73,9 +95,11 @@
     height: 10px;
     width: 10px;
     // background-color: var(--secondary);
-    background-color: white;
-    left: 145px;
-    top: calc(50% - 5px);
+    background-color: black;
+    // background-color: red;
+    // left: 125px;
+    left: calc(50% - 5px);
+    top: calc(200% - 5px);
     visibility: hidden;
   }
 
@@ -86,9 +110,11 @@
     height: 20px;
     width: 20px;
     // border: 2px solid var(--primary);
-    border: 1px solid white;
-    left: 140px;
-    top: calc(50% - 10px);
+    border: 1px solid black;
+    // left: 120px;
+    // left: calc(50% - 5px);
+    left: calc(50% - 10px);
+    top: calc(200% - 10px);
   }
 
   &__input-number {
@@ -99,9 +125,9 @@
     // color: var(--light);
     // border: 2px inset var(--dark4);
     background-color: transparent;
-    color: white;
+    color: black;
     font-family: "Roboto", sans-serif;
-    border: 1px solid white;
+    border: 1px solid black;
     outline: none;
     // cursor: pointer;
     font-size: 16px;

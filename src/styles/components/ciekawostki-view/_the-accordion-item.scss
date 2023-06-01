@@ -7,13 +7,16 @@
     transition: all 0.9s ease;
     width: 100%;
     max-height: 71px;
-
+    margin-bottom: 10px;
+    //to się updatuje
+    //jest problem z nakładającymi się borderami
     &--question {
       cursor: pointer;
     }
 
     &--answer {
       margin: 0 0 16px 0;
+      //to się updatuje
     }
   }
 

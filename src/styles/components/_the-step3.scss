@@ -1,55 +1,78 @@
 .form {
-	// background: linear-gradient(45deg, #f08181, #91c1ee);
-	background: linear-gradient(135deg, #91c1ee, #f08181);
-	max-width: 650px;
-	height: 400px;
-	margin: 0 auto;
-	font-family: sans-serif;
+  // background: linear-gradient(45deg, #f08181, #91c1ee);
+  // background: linear-gradient(135deg, #91c1ee, #f08181);
+  // max-width: 650px;
+  // height: 400px;
+  // margin: 0 auto;
+  // font-family: sans-serif;
 
-	&__wrapper {
-		width: 70%;
-		margin: 0 auto;
-		// background-color: var(--primary);
-	}
+  &__wrapper {
+    // width: 70%;
+    // margin: 0 auto;
+    // background-color: var(--primary);
+  }
 
-	&__title {
-		text-align: center;
-		margin: 0 0 1rem 0;
-		font-family: 'Roboto', sans-serif;
-		color: white;
-		text-transform: uppercase;
-		// font-weight: bold;
-		font-size: 2rem;
-		letter-spacing: 3px;
-	}
+  &__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    // font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+}
+
+.title {
+  grid-area: 1 / 5 / 2 / 9;
+}
+
+.limit {
+  grid-area: 2 / 4 / 3 / 10;
+}
+
+.pure {
+  grid-area: 3 / 3 / 4 / 7;
+}
+
+.portion {
+  grid-area: 3 / 7 / 4 / 11;
+}
+
+.time {
+  grid-area: 4 / 4 / 5 / 10;
 }
 
 .form-control {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	&__title {
-		font-family: 'Roboto', sans-serif;
-		text-transform: uppercase;
-		letter-spacing: 0.7px;
-		color: white;
-	}
-	&__input-number {
-		border: 1px solid white;
-		border-radius: 30px;
-		padding: 0 10px;
-	}
+  &__title {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: black;
+  }
+  &__input-number {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 0 10px;
+  }
 
-	&__option {
-		color: white;
-		font-family: 'Roboto', sans-serif;
-	}
+  &__option {
+    color: black;
+    font-family: "Roboto", sans-serif;
+  }
 
-	&__helper {
-		display: flex;
-		justify-content: space-between;
-	}
+  &__helper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
+//bez tych obwódek, same napisy, manipulacja rozmiarem
+//może jakiś ewentualny border-bottom
 
 /*.form-control {
 	display: flex;

@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import CiekawostkiView from "../views/CiekawostkiView.vue";
 import HeroView from "../views/HeroView.vue";
 import AboutView from "../views/AboutView.vue";
+import TestView from "../views/TestView.vue";
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: "/about",
     name: "about",
     component: AboutView,
+  },
+  {
+    path: "/test",
+    name: "test",
+    component: TestView,
   },
 ];
 
